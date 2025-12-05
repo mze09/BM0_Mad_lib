@@ -7,19 +7,23 @@ root = Tk()
 root.title("Enter Title Here")
 
 #Set size of window
-root.geometry("600x250")
+root.geometry("600x300")
 
 # Create buttons
 red_button = Button(root, text="Red", background='red')
 yellow_button = Button(root, text="Yellow", background='yellow')
+green_button = Button(root, text="Green", background='green')
+
+# Create message box
 
 #Add a label
-label = Label(root, text="CHANGE ME!")
+label = Label(root, text="This is a stoplight")
 
 # Place widgets in window (with pack function!)
-label.pack()
 red_button.pack()
 yellow_button.pack()
+green_button.pack()
+label.pack()
 
 # Start the GUI event loop
 root.mainloop()
